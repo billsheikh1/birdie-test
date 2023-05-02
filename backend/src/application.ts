@@ -1,8 +1,8 @@
-import * as express from "express";
-import {pingController} from "./controllers/ping";
+import * as express from 'express'
+import { EventController } from './controllers'
 
-const app = express();
+const app = express()
 
-app.use(pingController);
+app.use(EventController)
 
-export default app;
+export default app
